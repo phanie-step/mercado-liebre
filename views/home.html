@@ -16,93 +16,85 @@
 
 </head>
 
-    <body>
-        <header class="main-header">
-            <div class="main-header-top-bar">
-                <img src="/public/images/logo-mercado-liebre.svg" class="logo">
-                <h2 class="copy-header">
-                    <i class="fas fa-hand-holding-usd"></i>
-                    Comprá en cuotas y sin tarjeta de crédito
-                </h2>
-            </div>
+<body>
+    <header class="main-header">
+        <div class="main-header-top-bar">
+            <img src="/public/images/logo-mercado-liebre.svg" class="logo">
+            <h2 class="copy-header">
+                <i class="fas fa-hand-holding-usd"></i>
+                Comprá en cuotas y sin tarjeta de crédito
+            </h2>
+        </div>
 
-            <a href="#" class="hamburguer-button">
-                <i class= "fa fa-bars"></i>
-            </a>
+        <a href="#" class="hamburguer-button">
+            <i class="fa fa-bars"></i>
+        </a>
 
-            <nav class="main-navbar">
-                <ul class="left-navbar">
-                    <li><a href="#">Ofertas</a></li>
-                    <li><a href="#">Tiendas Oficiales</a></li>
-                    <li><a href="#">Vender</a></li>
-                    <li><a href="#">Ayuda</a></li>
-                </ul>
+        <nav class="main-navbar">
+            <ul class="left-navbar">
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Tiendas Oficiales</a></li>
+                <li><a href="#">Vender</a></li>
+                <li><a href="/views/formulario.html">Ayuda</a></li>
+            </ul>
 
-                <ul class="right-navbar">
-                    <li><a href="#">Creá tu cuenta</a></li>
-                    <li><a href="#">Ingresá</a></li>
-                    <li><a href="#">Mis compras</a></li>
-                </ul>
-            </nav>
-        </header>
+            <ul class="right-navbar">
+                <li><a href="#">Creá tu cuenta</a></li>
+                <li><a href="#">Ingresá</a></li>
+                <li><a href="#">Mis compras</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <main>
-            <div class="banner">
-                <img src="/public/images/img-home-banner.jpg" alt="">
-            </div>
-            <div>
-                <form action="/crear producto" method="POST" class="create-form"> 
-                    <div class="control-form">
-                        <label>Nombre del producto:</label>
-                        <input type="text" name="nombre" class="control">
-                    </div>
-                    <div class="control-form">
-                        <label>Precio del producto:</label>
-                        <input type="number" name="precio" placeholder="123.99" class="control">
-                    </div>
-                    <div class="control-form">
-                        <label>Categoría:</label>
-                        <select name="Categoría" class="control">
-                            <option value="hogar">Hogar</option>
-                            <option value="electro">Electrto</option>
-                            <option value="indumentraria">Indumentaria</option>
-                        </select>
-                    </div>
-                    <div class="control-form">
-                        <label>Descripción:</label>
-                        <textarea name="descripción" class="control"></textarea>
-                    </div>
-                    <div class="control-form">
-                        <label>Está en oferta:</label>
-                        <input type="radio" name="oferta">
-                    </div>
-                    <button type="submit" class="boton-form">Enviar</button>
-                    <button type="submit" class="boton-form">Borrar</button>
-                </form>
-            </div>
-            <div class="productos">
-                <article class="product">
-                    <img src="/public/images/img-samsung-galaxy-s10.jpg">
-                    <h2>Samsung Galaxy s10</h2>
-                </article>
-                <article class="product">
-                    <img src="/public/images/img-macbook-pro-2019.jpg">
-                    <h2>Macbook Pro 2019</h2>
-                </article>
-                <article class="product">
-                    <img src="/public/images/img-tv-samsung-smart.jpg">
-                    <h2>Tv Samsung Smart</h2>
-                </article>
-                <article class="product">
-                    <img src="/public/images/img-cafetera-moulinex.jpg">
-                    <h2>Cafetera Moulinex</h2>
-                </article>
-            </div>
-        </main>
+    <main>
+        <div class="banner">
+            <img src="/public/images/img-home-banner.jpg" alt="">
+        </div>
         
-        <footer>
+        <div class="productos">
+            <article class="product">
+                <img src="/public/images/img-samsung-galaxy-s10.jpg">
+                <h2>Samsung Galaxy s10</h2>
+                <h4>$3999.99</h4>
+                <p class="envio-gratis">Envío Gratis</p><br>
+            </article>
+            <article class="product">
+                <img src="/public/images/img-macbook-pro-2019.jpg">
+                <h2>Macbook Pro 2019</h2>
+                <h4>$24999.99</h4>
+                <p class="envio-gratis">Envío Gratis</p><br>
+            </article>
+            <article class="product">
+                <img src="/public/images/img-tv-samsung-smart.jpg">
+                <h2>Tv Samsung Smart</h2>
+                <h4>$25999.99</h4>
+                <p class="envio-gratis">Envío Gratis</p><br>
+            </article>
+            <article class="product">
+                <img src="/public/images/img-cafetera-moulinex.jpg">
+                <h2>Cafetera Moulinex</h2>
+            </article>
+        </div>
+    </main>
 
-        </footer>
-    </body>
+    <footer class="pie">
+        <nav class="footer-contacto">
+            <ul>
+                <li><a href="https://www.gmail.com">mercado-liebre@contacto.com</a></li>
+                <br>
+                <li>Copyright © 2021 Mercado Liebre. Todos los derechos reservados</li>
+            </ul>
+        </nav>
+        <nav class="footer-legales">
+            <ul>
+                <li><a href="#">Aviso de privacidad</a></li>
+                <li><a href="#">Protección de datos</a></li>
+                <li><a href="#">Condiciones de compra</a></li>
+                <li><a href="#">Politica de cookies</a></li>
+            </ul>
+        </nav>
+        <div>Más información</div>
+    </footer>
+</body>
 
 </html>
