@@ -71,32 +71,6 @@ main{
     margin-top: 165px;
 }
 
-.create-form{
-    padding: 20px 15px;
-    margin-top: 240px;
-    margin: auto;
-}
-
-.control-form{
-    margin-bottom: 15px;
-}
-
-.control-form label{
-    margin-bottom: 5px;
-    display: block;
-}
-
-.control{
-    padding: 16px;
-    width: 100%;
-}
-.boton-form{
-    border: none;
-    font-size: 20px;
-    background-color: #EAC926;
-    padding: 5px 10px;
-    border-radius: 5px;
-}
 
 .productos{
     display: flex;
@@ -120,6 +94,10 @@ main{
     
 }
 
+.envio-gratis{
+    color: rgb(45, 162, 45);
+}
+
 .product h2{
     background-color: rgba(0,0,0,0.5);
     color: white;
@@ -139,8 +117,34 @@ main{
 }
 
 footer{
-    background-color: white;
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
 }
+
+.footer-contacto, .footer-legales, ul{
+	list-style: none;
+}
+
+.footer-contacto a{
+	text-decoration: none;
+	color: #222222;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 17px;
+}
+
+a:hover, .footer-legales a:hover{
+	color: teal;
+}
+
+.footer-legales a{
+	text-decoration: none;
+	color: #222222;
+    display: inline-block;
+    font-size: 15px;
+}
+
 
  @media (min-width: 768px){
      .main-header-top-bar{
