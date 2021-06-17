@@ -1,0 +1,197 @@
+*{
+    font-family: Roboto;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+main{
+    background-color: rgba(223, 219, 219, 0.968);
+}
+.hamburguer-button{
+    max-width: 50px;
+    padding: 15px 0;
+    background-color: #03264C;
+    display: block;
+    color:#ffffff;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    margin: auto;
+}
+.main-header {
+    background-color: #EAC926;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    justify-content: center;
+    width: 100%;
+}
+    
+.logo { 
+    width: 200px; 
+    animation: aumentar 1s linear 2 alternate;  
+}
+
+@keyframes aumentar{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.5);
+    }
+}
+    
+.copy-header {
+    font-weight: 400;
+    text-align: center;
+    
+}
+
+.main-navbar ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-navbar a{
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 17px;
+}
+ .main-navbar{
+     display: none;
+ }
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 165px;
+}
+
+.create-form{
+    padding: 20px 15px;
+    margin-top: 240px;
+    margin: auto;
+}
+
+.control-form{
+    margin-bottom: 15px;
+}
+
+.control-form label{
+    margin-bottom: 5px;
+    display: block;
+}
+
+.control{
+    padding: 16px;
+    width: 100%;
+}
+.boton-form{
+    border: none;
+    font-size: 20px;
+    background-color: #EAC926;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.productos{
+    display: flex;
+    flex-direction: row;
+}
+
+.product{
+    padding: 0 15px;
+    position: relative;
+    margin: 30px 15px;
+}
+
+.product:hover h2{
+    opacity: 1;
+    border-radius: 20px;
+}
+
+.product img{
+    width: 100%;
+    border-radius: 5px;
+    
+}
+
+.product h2{
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    margin: 0;
+    padding: 15px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 450ms;
+    
+}
+
+footer{
+    background-color: white;
+}
+
+ @media (min-width: 768px){
+     .main-header-top-bar{
+         display: flex;
+         justify-content: space-between;
+     }
+     .copy-header{
+         max-width: 450px;
+         text-align: right;
+     }
+     .hamburguer-button{
+         display: none;
+     }
+     .main-navbar{
+         display: flex;
+         justify-content: space-between;
+     }
+     .main-navbar ul{
+        display: flex;
+     }
+     .main-navbar li{
+         margin: 0 15px;
+     }
+ }
+
+@media (min-width: 1200px){
+    .main-header-top-bar, .main-navbar{
+        max-width: 1200px;
+        margin: auto;
+    }
+    .main-header-top-bar{
+        align-items: center;
+
+    }
+
+    .logo{
+        width: 250px;
+    }
+    .main-navbar{
+        margin-top: 30px;
+    }
+    .main-navbar li{
+        margin: 0 10px;
+    }
+
+    .main-navbar a{
+        font-size:  19px;
+    }
+    .copy-header{
+        max-width: none;
+        margin: 0px;
+    }
+}
+
